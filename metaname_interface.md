@@ -19,14 +19,14 @@
 - Body:
 ```
 {
-    nameHex: "746573746e616d65",
+    name: "xn--0zwm56d",   // idna-uts46-hx.toAscii('测试')
     address: "msREe5jsynP65899v1KJCydf6Sc9pJPb8S",
     op: 1,
     source: 'ccoincash'
 }
 ```
 
-> * nameHex: 需要注册或者更新信息的名字。该名字由utf-8编码然后转换为hex。
+> * name: 需要注册或者更新信息的名字。由idna-uts46-hx.toAscii()函数生成。
 > * address: 用户的地址，用于接收nft。
 > * op: operation: 1 注册, 2 续费, 3 更新信息。
 > * source: 标记调用者的身份，方便查找错误。
